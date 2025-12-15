@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(./nebd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 270px;
+  width: 450px;
+  margin: 7% auto;
+  border-radius: 25px;
+  background-color: rgba(163, 161, 161, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 50px#111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header {
+  text-align: center;
+  color: #111;
+  flex: 1;
+  margin: 15px;
+  max-width: 700px;
+  padding: 5px;
+  line-height: 1;
+}
+
+.main {
+  text-align: center;
+  color: #111;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input_box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.input_box input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.input_box span {
+  position: relative;
+}
+
+.input_box span i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #111;
+  font-size: 20px;
+}
+
+.button_box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.button_box button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
+
+.input_box input:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button_box button:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111;
+}
+
+.button_box button:active {
+  transform: scale(0.98);
+}
+
+.error_message {
+  position: fixed;
+  top: 85%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.top_box {
+  height: 450px;
+  width: 600px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 50px#111;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top_box_header {
+  text-align: center;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.result_box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  font-size: 14px;
+  margin-top: 10px;
+  height: 60%;
+  width: 100%;
+  overflow-y: auto;
+  margin-top: 10px;
+}
