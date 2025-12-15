@@ -73,7 +73,7 @@ function login() {
         var decrypted_text = "";
 
         aes128CbcDecryptBase64(
-          "+6JLbxA3TWVXlkFvy6onROqYyazr8tm2KY14bTqCAyU=",
+          "rKscbFjswK4tdyexTVLhK10cyoC2S9ijVlp93QYw/L8=",
           pwd,
           "0102030405060708090a0b0c0d0e0f10"
         )
